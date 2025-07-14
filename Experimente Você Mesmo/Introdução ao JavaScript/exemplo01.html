@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao JavaScript</title>
 </head>
+
 <body>
-    
+    <h2>Introdução ao JavaScript</h2>
+    <br>
+    <h3>JavaScript pode alterar o conteúdo HTML</h3>
+    <p id="demonstracao">O JavaScript pode alterar o conteúdo HTML.</p>
+    <button type="button" onclick="mostrarMensagem()">Clique aqui!</button>
+    <br>
+    <br>
+    <h3>JavaScript pode alterar valores de atributos HTML</h3>
+    <p>Neste caso, o JavaScript altera o valor do atributo src de uma imagem.</p>
+    <button onclick="acenderLuz()">Acenda a luz!</button>
+    <img id="lampada" src="images/exemplo01-lampada-apagada.gif" alt="Lâmpada apagada." style="width: 100px;">
+    <button onclick="apagarLuz()">Apague a luz!</button>
+    <br>
+    <br>
+    <h3>JavaScript pode ocultar elementos HTML</h3>
+    <p id="esconder">É possível ocultar elementos HTML alterando o estilo de exibição (display).</p>
+    <button type="button" onclick="esconderConteudo()">Clique aqui!</button>
+    <br>
+    <br>
+    <h3>JavaScript pode mostrar elementos HTML</h3>
+    <p>Mostrar elementos HTML ocultos também pode ser feito alterando o estilo de exibição.</p>
+    <p id="exibir" style="display: none;">Olá, JavaScript!</p>
+    <button type="button" onclick="exibirConteudo()">Clique aqui!</button>
+
+
     <script>
-        
+
+        function mostrarMensagem() {
+            document.getElementById("demonstracao").innerHTML = "Olá, Mundo!";
+        }
+
+        function acenderLuz() {
+            document.getElementById("lampada").src = "images/exemplo01-lampada-acesa.gif";
+        }
+
+        function apagarLuz() {
+            document.getElementById("lampada").src = "images/exemplo01-lampada-apagada.gif";
+        }
+
+        function esconderConteudo() {
+            document.getElementById("esconder").style.display = "none";
+        }
+
+        function exibirConteudo() {
+            document.getElementById("exibir").style.display = "block";
+        }
+
     </script>
 </body>
+
 </html>
