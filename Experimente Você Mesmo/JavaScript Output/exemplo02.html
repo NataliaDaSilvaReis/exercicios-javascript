@@ -6,9 +6,33 @@
     <title>JavaScript Output</title>
 </head>
 <body>
-    <h2>JavaScript Output</h2>
+    <h2>Possibilidades de exibição do JavaScript</h2>
     <br>
-    <h3>Possibilidades de exibição do JavaScript</h3>
+    <h3>Usando innerHTML</h3>
+    <p>Para acessar um elemento HTML, você pode usar o método document.getElementById(id). Em seguida, use a propriedade innerHTML para alterar o conteúdo HTML do elemento HTML.</p>
+    <p id="demonstracao"></p>
+    <br>
+
+    <h3>Usando innerText</h3>
+    <p>Use innerText para alterar o texto interno do elemento HTML.</p>
+    <p>Use innerHTML quando quiser alterar um elemento HTML. Use innerText quando quiser alterar apenas o texto simples.</p>
+    <p id="demonstracao2"></p>
+    <br>
+
+    <h3>Usando document.write()</h3>
+    <p>O método document.write() deve ser usado somente para testes. Usar document.write() depois que um documento HTML for carregado, excluirá todo o HTML existente.</p>
+    <button type="button" onclick="Sobrescrever()">Tente isso!</button>
+    <br>
+    <br>
+
+    <h3>Usando window.alert()</h3>
+    <p>Em JS, o objeto window é um objeto de escopo global. Isso significa que variáveis, métodos e propreidades, por padrão, pertencem ao objeto window. Isso também significa que especificar a palavra-chave window é opcional.</p>
+    <button type="button" onclick="Alertar()">Tente isso!</button>
+    <br>
+    <br>
+
+    <h3>Usando console.log()</h3>
+    <p>Para fins de depuração, você pode chamar o console.log() no navegador para exibir dados.</p>
 
     <script src="exemplo02.js"></script>
 </body>
